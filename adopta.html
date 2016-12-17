@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8" />
+	<title>Paseandogs | Adopta</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cs-select.css">
+	<link rel="stylesheet" href="css/cs-skin-underline.css">
+	</head>
+	<body>
+
+		<div class="header">
+				<div class="index">
+					<h1><a href="index.html"><b>PASEAN</b>DOGS</a></h1>
+				</div>
+				<ul class="nav">
+					<li>conoce tu mascota ideal</li>
+					<li>aprende</li>
+					<li>colabora</li>
+					<li>contactanos</li>
+				</ul>
+		</div>
+
+		<div class="new-search">
+			<div class="search-box">
+				<h1>Adopta una mascota y se parte del cambio.</h1>
+
+				<select id="raza" class="raza cs-select cs-skin-underline">
+					<option value="" disabled selected>Escoge una raza</option>
+					<option value="Cualquiera">Cualquiera</option>
+					<option value="Labrador">Labrador</option>
+					<option value="Pitbull">Pitbull</option>
+					<option value="Caniche">Caniche</option>
+				</select>
+
+
+				<select id="tamaño" class="tamano cs-select cs-skin-underline">
+					<option value="" disabled selected>Escoge un tamaño</option>
+					<option value="Cualquiera">Cualquiera</option>
+					<option value="Chico">Chico</option>
+					<option value="Mediano">Mediano</option>
+					<option value="Grande">Grande</option>
+				</select>
+
+				<select id="edad" class="edad cs-select cs-skin-underline">
+					<option value="" disabled selected>Escoge la edad</option>
+					<option value="Cualquiera">Cualquiera</option>
+					<option value="Cachorro">Cachorro</option>
+					<option value="Joven">Joven</option>
+					<option value="Adulto">Adulto</option>
+				</select>
+
+				<select id="distancia" class="distancia cs-select cs-skin-underline">
+					<option value="" disabled selected>Radio de busqueda</option>
+					<option value="50">Menos de 50 kilometros</option>
+					<option value="75">Menos de 75 kilometros</option>
+					<option value="100">Menos de 100 kilometros</option>
+					<option value="200">Menos de 200 kilmetros</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="bianco">
+			<div class="container">
+				<hr style="	border-top: solid 1px #b7bbbd;"></hr>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="col">
+					<h5>Paseandogs</h5><small> Organizacion de adopcion de mascotas sin fines de lucro</small>
+					<p>Cerrada Matias Romero, 25 - 50053 Valle centro (CDMX)<br> +55 044 4040 9999</p>
+				</div>
+				<div class="col">
+					<h5>Desde el blog</h5>
+					<p>Descubre los mejores tips para tu mascota, conoce grupos paseo cerca de tu ciudad, los mejores recorridos, como llevar una vida sana y mas ... </p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="bianco">
+			<div class="container">
+				<hr style="	border-top: solid 1px #b7bbbd;"></hr>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+		<script>
+			(function() {
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx(el);
+				} );
+			})();
+		</script>
+	</body>
+</html>
